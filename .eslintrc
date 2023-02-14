@@ -21,12 +21,12 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "solid"
+    "solid",
+    "react"
   ],
   "extends": [
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:react/recommended"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "rules": {
     // React
@@ -34,8 +34,6 @@
       "error",
       2
     ],
-    "react/react-in-jsx-scope": "off",
-    "react/no-unknown-property": "off",
     // Erros
     "array-callback-return": [
       "error",

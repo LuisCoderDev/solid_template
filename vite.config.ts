@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 import solidSvg from 'vite-plugin-solid-svg';
+import cssnano from 'cssnano';
+import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   publicDir: './public',
@@ -18,5 +20,13 @@ export default defineConfig({
   },
   build: {
     target: 'esnext'
+  },
+  css: {
+    postcss: {
+      plugins: [
+        autoprefixer(),
+        cssnano()
+      ]
+    }
   }
 });

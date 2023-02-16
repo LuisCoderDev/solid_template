@@ -1,17 +1,17 @@
 import { Component } from 'solid-js';
 
-import styles from './App.module.css';
-import Logo from './logo.svg';
+import './app.scss';
+import Logo from './logo.svg?component-solid';
 
 const App: Component = () => (
-  <div class={styles.App}>
-    <header class={styles.header}>
-      <Logo />
+  <div class='app'>
+    <header class='header'>
+      <Logo class='logo' />
       <p>
         Edit <code>src/App.tsx</code> and save to reload.
       </p>
       <a
-        class={styles.link}
+        class='link'
         href='https://github.com/solidjs/solid'
         target='_blank'
         rel='noopener noreferrer'
@@ -22,4 +22,4 @@ const App: Component = () => (
   </div>
 );
 
-export default App;
+export { App };

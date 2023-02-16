@@ -29,6 +29,8 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "rules": {
+    // typescript
+    "@typescript-eslint/no-non-null-assertion": "off",
     // React
     "react/jsx-indent": [
       "error",
